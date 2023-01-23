@@ -1,23 +1,26 @@
 .header-nav{
-    background: transparent !important;
     transition: all 0.5s ease;
+    
     .brand-name{
         color: whitesmoke;
         font-size: xx-large;
-        font-family: 'Pacifico', cursive !important;
         transition: all 0.5s ease;
-        &:hover{
+        
+        &:hover {
             color: #29a19c !important;
             transition: color 0.3s ease-in-out;
         }
-        &:focus{
+        
+        &:focus {
             color: white !important;
         }
     }
+    
     .navbar-toggler{
         border-color: #ffff;
         transition: all 0.5s ease;
-        &-icon{
+        
+        &-icon {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
         }
     }
@@ -29,14 +32,16 @@
         font-size: 17px;
         font-family: 'Courier Prime', monospace !important;
         transition: all 0.5s ease;
-        &:hover,&:focus{
+        
+        &:hover, &:focus{
             color: #29a19c !important;
             transition: color 0.3s ease-in-out;
         }
+        
         .button{
             color:#29a19c;
             border-color: #29a19c;
-            &:hover,&:focus,&:active{
+            &:hover, &:focus, &:active {
                 outline:none !important;
                 box-shadow: none !important;
                 background-color: transparent !important;
@@ -48,25 +53,26 @@
     }
 }
 
-.header-nav.sticky{
+.header-nav.sticky {
     background-color: white !important;
     transition: all 0.5s ease;
     padding-top: 2px;
     padding-bottom: 2px;
-    .brand-name,.nav-link{
+    .brand-name, .nav-link {
         color: white !important;
         transition: all 0.5s ease;
-        &:hover{
+        &:hover {
             color: #29a19c !important;
             transition: color 0.3s ease;
         }
     }
-    .nav-link{
-        &:hover{
+    .nav-link {
+        &:hover {
             background-color: rgba(0,0,0,0.1);
             transition: all 0.5s ease;
         }
-        &:nth-last-child(1):hover{
+        
+        &:nth-last-child(1):hover {
             background-color: white !important;
             transition: all 0.5s ease;
         }

@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
 import NavigationBar from "./components/navbar";
-// import Skills from "./components/skills";
-// import Contact from "./components/contact";
 import Cover from "./components/cover";
 import Timeline from "./components/timeline";
+import Skills from "./components/skills";
+import Contact from "./components/contact";
 
 class Main extends Component {
     render() {
@@ -13,8 +13,11 @@ class Main extends Component {
                 <NavigationBar/>
                 <Cover/>
                 <Timeline/>
+                <Skills/>
+                <Contact/>
             </div>
         );
-      }
     }
+}
+
 export default Main;

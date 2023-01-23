@@ -6,6 +6,7 @@
     background-size: cover;
     width: 100%;
     height: 100vh;
+    
     .head {
         font-family:  'Rubik', sans-serif;
         color:white;
@@ -18,20 +19,23 @@
         line-height: 0.1vh;
         min-height: 100vh;
         display: flex;
-        &-div{
+        &-div {
             &-first-text{
                 font-family: 'Courier Prime', monospace;;
                 font-size: 18px !important;
                 color: #63c9c6;
                 padding-left: 5px;
             }
+            
             &-second-text, &-third-text{
                 font-size: 75px;
                 padding: 0 !important;
             }
+            
             &-third-text{
                 color: #228B22 !important;
             }
+            
             &-fourth-text{
                 max-width: 500px;
                 font-size: 17px;
@@ -42,6 +46,7 @@
             }
         }
     }
+    
     .scroll-btn {
         display: block;
         position: absolute;
@@ -50,11 +55,13 @@
         right: 0;
         text-align: center;
     }
+    
     .scroll-btn > *:hover,
     .scroll-btn > *:focus,
     .scroll-btn > *.active {
         color: #ffffff;
     }
+    
     .scroll-btn > *:hover,
     .scroll-btn > *:focus,
     .scroll-btn > *:active,
@@ -62,6 +69,7 @@
         opacity: 0.8;
         filter: alpha(opacity=80);
     }
+    
     .scroll-btn .mouse {
         position: relative;
         display: block;
@@ -74,6 +82,7 @@
         border: 3px solid white;
         border-radius: 23px;
     }
+    
     .scroll-btn .mouse > * {
         position: absolute;
         display: block;
@@ -88,7 +97,8 @@
         -moz-animation: ani-mouse 2.5s linear infinite;
         animation: ani-mouse 2.5s linear infinite;
     }
-    .social-media{
+    
+    .social-media {
         width: 40px;
         position: fixed;
         bottom: 0px;
@@ -96,7 +106,7 @@
         right: auto;
         z-index: 10;
         color: #ffffff;
-        &-list{
+        &-list {
             display: flex;
             flex-direction: column;
             -webkit-box-align: center;
@@ -104,7 +114,8 @@
             padding: 0px;
             margin: 0px;
             list-style: none;
-            &::after{
+            
+            &::after {
                 content: "";
                 display: block;
                 width: 1px;
@@ -112,7 +123,8 @@
                 margin: 0px auto;
                 background-color: #fff;
             }
-            a{
+            
+            a {
                 display: inline-block;
                 text-decoration: none;
                 text-decoration-skip-ink: auto;
@@ -124,14 +136,15 @@
                     color: #29a19c;
                 }
             }
-            &-link{
+            
+            &-link {
                 padding:10px;
-                .media-icons{
+                .media-icons {
                     width:24px;
                     height:24px;
                     fill: currentColor;
                 }
-                &:hover{
+                &:hover {
                     transform: translateY(-3px);
                 }
             }

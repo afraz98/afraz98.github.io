@@ -1,11 +1,12 @@
-
-import React from 'react';
+import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { faBriefcase, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Timeline = () => {
+class Timeline extends Component { 
+    render() {
     return (
+    <div id="timeline">
       <Container>
         <Row>
           <Col>
@@ -36,7 +37,9 @@ const Timeline = () => {
           </Col>
         </Row>
       </Container>
+      </div>
     );
+}
 }
 
 const ExperienceData = [

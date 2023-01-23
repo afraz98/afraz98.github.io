@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 class Cover extends Component {
-  render(){
+  render() {
   return (
     <div className="bg-div" id="home">
       <div className="head mx-5">

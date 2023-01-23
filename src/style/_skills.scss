@@ -1,0 +1,40 @@
+.skills {
+    background:linear-gradient(0deg, rgba(11, 11, 13, 0.5), rgba(11, 11, 13, 0.6));
+    padding: 20px;
+
+    .main-div {
+        background: "#0b0b0d"; 
+        color: "white";
+        display: "flex";
+    }
+
+    .text {
+        max-width: 950px;
+    }
+
+    .fa-icon:hover {
+        color: "green";   
+    }
+
+    .skills-box {
+        display: flex;
+        max-width: 400px;
+        width: 100%;
+        justify-content: space-between;
+        
+        .lists {
+            li {
+                display: flex;
+                align-items: center;
+                &::before{
+                    position: relative;
+                    margin-right: 10px;
+                    left:0;
+                    line-height: 11px;
+                    font-size: 10px;
+                    color: #63c9c6;
+                }
+            }
+        }
+    }
+}

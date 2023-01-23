@@ -1,32 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&disp');
 @import "~bootstrap/scss/bootstrap";
-
-//font-family: 'Pacifico', cursive;
-//font-family: 'Courier Prime', monospace;
-
-::-webkit-scrollbar {
-  width: 13px;
-}
-
-/* Track */
-::-webkit-scrollbar-track { 
-  border-radius: 3px;
-  background-color: #656464;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #403f3f; 
-  border-radius: 3px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #5a5959; 
-}
 
 * {
   margin: 0;
@@ -60,30 +35,24 @@ body {
   padding:70px 150px;
 }
 
-.div-1{
+.div-1 {
   max-width: 1000px;
   width: 100%;
 }
 
-.div-2{
+.div-2 {
   max-width: 900px;
   width: 100%;
 }
 
-.div-3{
+.div-3 {
   max-width: 700px;
   width: 100%;
 }
 
-.div-4{
+.div-4 {
   max-width: 500px;
   width: 100%;
-}
-
-.react-reveal {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li {
@@ -95,3 +64,5 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 @import "./responsive";
 @import "./cover";
 @import "./timeline";
+@import "./skills";
+@import "./contact";
