@@ -1,40 +1,25 @@
-.skills {
+.skills-div {
     background:linear-gradient(0deg, rgba(11, 11, 13, 0.5), rgba(11, 11, 13, 0.6));
-    padding: 20px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
 
-    .main-div {
-        background: "#0b0b0d"; 
-        color: "white";
-        display: "flex";
+    .heading {
+        color: white;
+        justify-content: center;
     }
 
-    .text {
-        max-width: 950px;
+    .fa-icon {
+        color: green;
+        font-size: 4rem;
     }
 
     .fa-icon:hover {
-        color: "green";   
-    }
-
-    .skills-box {
-        display: flex;
-        max-width: 400px;
-        width: 100%;
-        justify-content: space-between;
-        
-        .lists {
-            li {
-                display: flex;
-                align-items: center;
-                &::before{
-                    position: relative;
-                    margin-right: 10px;
-                    left:0;
-                    line-height: 11px;
-                    font-size: 10px;
-                    color: #63c9c6;
-                }
-            }
-        }
+        color: white;   
     }
 }

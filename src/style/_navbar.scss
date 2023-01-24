@@ -3,11 +3,12 @@
     
     .brand-name{
         color: whitesmoke;
+        font-family: $press-start;
         font-size: xx-large;
         transition: all 0.5s ease;
         
         &:hover {
-            color: #29a19c !important;
+            color: #014421 !important;
             transition: color 0.3s ease-in-out;
         }
         
@@ -19,22 +20,19 @@
     .navbar-toggler{
         border-color: #ffff;
         transition: all 0.5s ease;
-        
-        &-icon {
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
-        }
     }
+
     .nav-link{
         display: flex;
         justify-content: center;
         align-items: center;
         color:white !important;
         font-size: 17px;
-        font-family: 'Courier Prime', monospace !important;
+        font-family: $courier !important;
         transition: all 0.5s ease;
         
         &:hover, &:focus{
-            color: #29a19c !important;
+            color: #014421 !important;
             transition: color 0.3s ease-in-out;
         }
         
