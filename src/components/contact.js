@@ -14,7 +14,6 @@ class Contact extends Component {
                     </p>
                     <a href="mailto:anthonymfrazier1998@gmail.com" className="button btn btn-outline-success my-3"> Contact Me </a>
                 </section>
-                <p className="footer"> Anthony Frazier </p>
                 </div>
             </div>
             </div>

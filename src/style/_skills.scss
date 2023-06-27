@@ -5,21 +5,34 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: max-content;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    padding: 25vh;
 
-    .heading {
-        color: white;
-        justify-content: center;
-    }
+    .skills-div-inner {
+        .skills-div-innermost {
+            padding-top: 10vh;
+            
+            .heading {
+                color: white;
+                justify-content: center;
+            }
 
-    .fa-icon {
-        color: green;
-        font-size: 4rem;
-    }
+            .tool-icon-row {
+                display: flex;
+                justify-content: space-evenly;
+                padding-bottom: 5vh;
 
-    .fa-icon:hover {
-        color: white;   
+                .fa-icon {
+                    color: green;
+                    font-size: 4rem;
+                }
+
+                .fa-icon:hover {
+                    color: white;   
+                }
+            }
+        }
     }
 }

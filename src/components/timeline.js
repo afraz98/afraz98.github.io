@@ -6,13 +6,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 class Timeline extends Component { 
     render() {
     return (
-    <div id="timeline">
+    <div id='timeline' className='timeline-container'>
       <Container>
         <Row>
           <Col>
             <ul className="timeline">
             {
-                ExperienceData.map(item => {
+                ExperienceData.map(
+                  item => {
                     return (
                       <li className="timeline-item" key={item.id}>
                         <div className="timeline-badge"> <FontAwesomeIcon icon={item.icon}/> </div>
@@ -21,18 +22,26 @@ class Timeline extends Component {
                             <div className="timeline-heading-div">
                               <h4 className="timeline-title">{item.company}</h4>
                               <span> | </span>
-                              <p style={{fontSize:"17px",opacity:"0.4"}}>{item.date}</p>
+                              <p className='timeline-heading'>{item.date}</p>
                             </div>
                             <p className="text">{item.position}</p>
                           </div>
                           <div className="timeline-body">
-                            <p>{item.text}</p>
+                            <ul>
+                              {
+                                item.entries.map (
+                                  entry => {
+                                    return (<li className="timeline-item-entry">{entry}</li>)
+                                  }
+                                )
+                              }
+                            </ul>
                           </div>
                         </div>
                       </li>
                     );
                 })
-            }
+              }
             </ul>
           </Col>
         </Row>
@@ -48,8 +57,12 @@ const ExperienceData = [
       company: "Johns Hopkins University Applied Physics Laboratory",
       position: "Embedded Software Engineer",
       site: "",
-      date: "July 2023 - ",
-      text: "",
+      date: "July 3 2023 - Present",
+      entries: [
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      ],
       icon: faBriefcase
     },
     
@@ -59,11 +72,13 @@ const ExperienceData = [
       position: "Software Engineer",
       site: "",
       date: "February 2021 - June 2023",
-      text: `Developed an automated testing environment for external customers to evaluate the performance of purchased radios in an effort to reduce return merchandise authorization requests for shipped radios. 
-      Collaborated with project managers and other management bodies with similar interests to define requirements for a final customer deliverable. 
-      Led regular meetings with the software development team in order to identify software requirements and areas of difficulty in day-to-day development operations. 
-      Reviewed and accepted merge requests across several different feature branches to ensure code developed in parallel would incorporate properly. 
-      Mentored one junior software engineer on software development practices, regularly evaluating development performance and identifying potential areas of improvement.`,
+      entries: [
+        'Developed an automated testing environment for external customers to evaluate the performance of purchased radios in an effort to reduce return merchandise authorization requests for shipped radios.\n\n',
+        'Collaborated with project managers and other management bodies with similar interests to define requirements for a final customer deliverable.\n\n',
+        'Led regular meetings with the software development team in order to identify software requirements and areas of difficulty in day-to-day development operations.\n\n', 
+        'Reviewed and accepted merge requests across several different feature branches to ensure code developed in parallel would incorporate properly.\n\n',
+        'Mentored one junior software engineer on software development practices, regularly evaluating development performance and identifying potential areas of improvement.\n\n',
+      ],
       icon: faBriefcase
     },
     
@@ -72,9 +87,11 @@ const ExperienceData = [
       company: "Leonardo DRS",
       position: "RF Engineering Intern",
       date: "June 2019 - August 2019",
-      text: 'Compiled and analyzed data for a microwave tuner to ensure that customers understood how certain units performed in certain frequency bands.\n' + 
-      'Tested a microwave tuner over temperature allowing engineering staff to evaluate how the tuner performs from -40°C to +70°C.\n' + 
-      'Designed and optimized a microwave filter to ensure proper passband response and out of band rejection as specified by a customer.',
+      entries: [
+        'Compiled and analyzed data for a microwave tuner to ensure that customers understood how certain units performed in certain frequency bands.\n\n', 
+        'Tested a microwave tuner over temperature allowing engineering staff to evaluate how the tuner performs from -40°C to +70°C.\n\n',
+        'Designed and optimized a microwave filter to ensure proper passband response and out of band rejection as specified by a customer.\n\n',
+      ],
       icon: faBriefcase
     },
 
@@ -83,7 +100,9 @@ const ExperienceData = [
       company: "University of Maryland, College Park",
       position: "Bachelor's of Science, Computer Engineering",
       date: "August 2016 - December 2020",
-      text: "Relevant Coursework: Digital Logic Design, Digital Computer Design, Organization of Programming Languages, Advanced Data Structures, Operating Systems, Microprocessors, Reverse Engineering and Hardware Security, Cryptography",
+      entries: [
+        "Relevant Coursework: Digital Logic Design, Digital Computer Design, Organization of Programming Languages, Advanced Data Structures, Operating Systems, Microprocessors, Reverse Engineering and Hardware Security, Cryptography"
+      ],
       icon: faGraduationCap
     },
   ];
