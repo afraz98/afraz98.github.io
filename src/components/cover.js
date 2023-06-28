@@ -2,10 +2,34 @@ import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
+// Imports for the cool halo effect.
+// Thanks Vanta -- https://github.com/tengbao/vanta
+import * as THREE from 'three'
+import HALO from 'vanta/dist/vanta.halo.min'
+
 class Cover extends Component {
+  constructor(){
+    super()
+    this.vanta_ref = React.createRef()
+  }
+
+  componentDidMount() {
+    // Where the magic happens
+    this.vanta_effect = HALO({
+      el: this.vanta_ref.current,
+      THREE: THREE,
+      backgroundColor: 0x0b0b0b,
+      baseColor: 0xd4d3e
+    })
+  }
+
+  componentWillUnmount(){
+    if(this.vanta_effect) this.vanta_effect.destroy()
+  }
+
   render() {
   return (
-    <div className="bg-div" id="home">
+    <div ref={this.vanta_ref} className="bg-div" id="home">
       <div className="head mx-5">
         <div className="head-div mx-auto main-div">
             <section className="div-1">
