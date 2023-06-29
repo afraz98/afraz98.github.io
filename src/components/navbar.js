@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav'
 class NavigationBar extends Component {
     render() {
         return (
-            <div>
+            <div id="navigation-bar">
                 <Navbar className="header-nav" fixed="top" collapseOnSelect bg="dark" expand="lg">
                     <Container>
                         <Navbar.Brand href="#home" className="brand-name m1-5"> Anthony Frazier </Navbar.Brand>

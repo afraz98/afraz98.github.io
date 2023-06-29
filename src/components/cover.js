@@ -4,8 +4,8 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 // Imports for the cool halo effect.
 // Thanks Vanta -- https://github.com/tengbao/vanta
-import * as THREE from 'three'
-import HALO from 'vanta/dist/vanta.halo.min'
+import p5 from 'p5'
+import TRUNK from 'vanta/dist/vanta.trunk.min'
 
 class Cover extends Component {
   constructor(){
@@ -15,11 +15,19 @@ class Cover extends Component {
 
   componentDidMount() {
     // Where the magic happens
-    this.vanta_effect = HALO({
+    this.vanta_effect = TRUNK ({
       el: this.vanta_ref.current,
-      THREE: THREE,
-      backgroundColor: 0x0b0b0b,
-      baseColor: 0xd4d3e
+      p5: p5,
+      backgroundColor: 0x0,
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x1a571a,
+      chaos: 10.00,
     })
   }
 
