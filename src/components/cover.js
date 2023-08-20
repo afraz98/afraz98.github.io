@@ -4,7 +4,6 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 // Imports for the cool halo effect.
 // Thanks Vanta -- https://github.com/tengbao/vanta
-
 import p5 from 'p5'
 import TRUNK from 'vanta/dist/vanta.trunk.min'
 

@@ -59,9 +59,9 @@ const ExperienceData = [
       site: "",
       date: "July 3 2023 - Present",
       entries: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'Maintained and contributed to image acquisition code interfacing with infrared cameras',
+        'Assisted in the development of firmware for devices controlled by a PIC32 microcontroller interfacing with other devices over I2C and over protocols.',
+        'Worked with engineers to develop Git version control workflows to better organize how source code was contributed to projects'
       ],
       icon: faBriefcase
     },

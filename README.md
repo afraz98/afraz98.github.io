@@ -23,5 +23,7 @@ npm run deploy
 ## Toolkits
 
 - [Vanta.js](https://www.vantajs.com/)
-- [ReactBootstrap](https://react-bootstrap.netlify.app/)
+- [Bootstrap](https://getbootstrap.com/docs/3.4/css/)
+- [React](https://react.dev/)
 - [FontAwesome](https://fontawesome.com/)
+- [Sass](https://sass-lang.com/)
